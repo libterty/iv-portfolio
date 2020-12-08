@@ -2,11 +2,11 @@
   <transition name="fade" tag="div" class="wrapper" mode="out-in">
     <div class="wrapper" v-if="isLoaded" id="app">
       <LandingPage :user="user" />
-      <Description :user="user" :content="findSlug('description')" :links="findSlug('links')" />
-      <Experience :content="findSlug('experiences')" />
-      <Skills :content="findSlug('skills')" />
-      <Projects :content="findSlug('projects')" />
-      <Footer :user="user" :links="findSlug('links')" />
+      <Description :user="user" :content="description" :links="link" />
+      <Projects :content="projects" />
+      <Skills :content="skills" />
+      <Experience :content="experiences" />
+      <Footer :user="user" :links="link" />
     </div>
   </transition>
 </template>
@@ -20,7 +20,7 @@ import Projects from "./components/Projects.vue";
 import Footer from "./components/Footer.vue";
 import config from "../config.json";
 
-import { bucket } from "./cosmic.js";
+// import { bucket } from "./cosmic.js";
 
 export default {
   name: "App",
@@ -35,29 +35,35 @@ export default {
   data: () => ({
     isLoaded: false,
     user: {},
-    posts: [],
+    description: {},
+    link: {},
+    experiences: {},
+    skills: {},
+    projects: {},
   }),
   methods: {
-    fetchPosts() {
-      return bucket.getObjects({
-        type: "portfolio-contents",
-        props: "slug,title,metadata",
-      });
-    },
-    findSlug(slug) {
-      return this.posts.find((item) => {
-        return item.slug === slug;
-      });
-    }
+    // fetchPosts() {
+    //   return bucket.getObjects({
+    //     type: "portfolio-contents",
+    //     props: "slug,title,metadata",
+    //   });
+    // },
+    // findSlug(slug) {
+    //   return this.posts.find((item) => {
+    //     return item.slug === slug;
+    //   });
+    // },
   },
   created() {
     document.body.classList.add("loading");
-    Promise.all([this.fetchPosts()]).then(([posts]) => {
-      this.posts = posts.objects;
-      this.user = config.user;
-      this.isLoaded = true;
-      this.$nextTick(() => document.body.classList.remove("loading"));
-    });
+    this.user = config.user;
+    this.description = config.user.description;
+    this.link = config.user.link;
+    this.experiences = config.user.experiences;
+    this.skills = config.user.skills;
+    this.projects = config.user.projects;
+    this.isLoaded = true;
+    this.$nextTick(() => document.body.classList.remove("loading"));
   },
 };
 </script>
