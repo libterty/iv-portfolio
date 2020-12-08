@@ -29,26 +29,15 @@
     import PersonnalCard from './PersonnalCard.vue'
     import Presentation from './Presentation.vue'
     import Photo from './Photo.vue'
-    import config from '../../config.json';
 
     export default {
         name: 'AboutMe',
-        props: ['user'],
+        props: ['user', 'content', 'links'],
         components: {
             Title,
             PersonnalCard,
             Presentation,
             Photo
-        },
-        data: () => ({
-            content: {},
-            links: {},
-        }),
-        created() {
-            console.log("config", config);
-            console.log("users", this.user);
-            this.content = config.user.content;
-            this.links = config.user.links;
         }
     }
 </script>
