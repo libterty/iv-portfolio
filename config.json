@@ -7,24 +7,134 @@
     "city": "Taipei City",
     "lang": "Mandarin",
     "photo": "https://i.imgur.com/jjYL1U2t.jpg",
-    "content": {
+    "description": {
       "slug": "description",
       "title": "description",
       "metadata": {
         "description": "Hope to know you after",
         "pres_first": "I'm a Data Engineer.",
-        "pres_second": "I always liked to get into projects using the skills that I did not have or were even spare pure programming like web design, 3D modeling ect...  This allowed me to learn to be autonomous and to learn on my own, certainly not without difficulties far from it, but I always managed to overcome the obstacles and solve the problems I encountered !",
+        "pres_second": "I'm Ivonne",
         "pres_title": "Who am I ?"
       }
     },
-    "links": {
+    "link": {
       "slug": "links",
       "title": "links",
       "metadata": {
         "facebook": "https://www.facebook.com/ivonne.yang",
         "github": "https://github.com/Ivonne-Y",
-        "instagram": "https://www.instagram.com/_hbollon",
-        "linkedin": "https://www.linkedin.com/in/hugobollon"
+        "instagram": "",
+        "linkedin": ""
+      }
+    },
+    "experiences": {
+      "slug": "experiences",
+      "title": "experiences",
+      "metadata": {
+        "title": "Experience",
+        "description": "Professional and academic",
+        "academic": [
+          {
+            "content": "Soochow University",
+            "title": "Big Data Management",
+            "year": "From May 2020"
+          },
+          {
+            "content": "National Taiwan Ocean University",
+            "title": "Maritime Science and Management",
+            "year": "From June 2015"
+          }
+        ],
+        "professional": [
+          {
+            "title": "Wisdom Marine Group",
+            "position": "Vessel Operator",
+            "content": "- Operate 7-9 vessels at one time, covering problem-solving, budget management, coordination with other departments andoyage optimization. <br> - In charge of day-to-day operation with hire/laytime calculation for Voyage Charter, Time Charter Trip and Time Charter Period. <br> - Claim cases handling and Charter Party clauses reviewing prior to fixtures. <br> - Liaise with Agency and Bunker Trader for VC arrangement.",
+            "year": "November 2017 – Present"
+          },
+          {
+            "title": "Max-Bridge Co., Ltd",
+            "position": "Shipbroker Post Fixture/Operation",
+            "content": "- Engaged in daily liaison with Owners and Charterers. <br> - Ensure that fixtures are concluded according to charter party clauses and shipping terms/practices. <br> - Handled disputes and prepared charter parties.",
+            "year": "February 2017 – November 2017"
+          },
+          {
+            "title": "Interasia Lines, Limited",
+            "position": "Equipment (Container Inventory) Controller",
+            "content": "- Managed equipment (containers) inventory in Taiwan, Vietnam and Cambodia wide. <br> - Handled stock monitoring and forecasting, depot performance, data quality, cost control and execution of container distribution. <br> - Built models to improve workflow by Oracle.",
+            "year": "June 2016 – February 2017"
+          },
+          {
+            "title": "Evergreen Marine Corporation",
+            "position": "Deck Cadet",
+            "content": "- Assisted deck officers and handled their day-to-day operations. <br> - Developed skills, knowledges and competence of being deck officer.",
+            "year": "ebruary 2015 – September 2015"
+          }
+        ]
+      }
+    },
+    "skills": {
+      "slug": "skills",
+      "title": "skills",
+      "metadata": {
+        "title": "Skills",
+        "description": "Here is my armament",
+        "items": [
+          {
+            "title": "Python",
+            "img": "python.png"
+          },
+          {
+            "title": "Oracle",
+            "img": "oracle.png"
+          },
+          {
+            "title": "MySQL",
+            "img": "mysql.png"
+          },
+          {
+            "title": "Neo4j",
+            "img": "neo4j.png"
+          },
+          {
+            "title": "Gephi",
+            "img": "gephi.png"
+          },
+          {
+            "title": "Tableau",
+            "img": "tableau.png"
+          },
+          {
+            "title": "Power BI",
+            "img": "powerbi.png"
+          }
+        ]
+      }
+    },
+    "projects": {
+      "slug": "projects",
+      "title": "projects",
+      "metadata": {
+        "title": "My projects",
+        "description": "This is my story",
+        "items": [
+          {
+            "title": "Vessel Daily Performance Model",
+            "content": "Build a model to web-crawl data of whole fleet from routing company’s website to preliminarily check speed performance and calculate time loss/bunker consumption, if any.",
+            "date": "May 2020",
+            "color": "red",
+            "image": "",
+            "link": ""
+          },
+          {
+            "title": "WPG Dadatong Social Network Analysis",
+            "content": "WPG Dadatong Social Network Analysis use Python, SQL and Gephi for full stack development. It's purpose is providing constructive suggestions on how to improve company’s website.",
+            "date": "September 2016",
+            "color": "blue",
+            "image": "",
+            "link": ""
+          }
+        ]
       }
     }
   }
