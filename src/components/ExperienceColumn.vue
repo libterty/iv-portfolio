@@ -6,6 +6,9 @@
       <div class="resume-description">
         <strong class="color-light" v-html="post.title"></strong>
       </div>
+      <div class="resume-position">
+        <small class="color-light" v-html="post.position"></small>
+      </div>
       <div class="color-darker" v-html="post.content"></div>
     </div>
   </div>
@@ -29,6 +32,10 @@ export default {
   }
   .resume-description {
     font-size: 1.7rem;
+  }
+  .resume-position {
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
   }
   .year {
     font-weight: 600;
