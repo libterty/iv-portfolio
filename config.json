@@ -1,0 +1,31 @@
+{
+  "user": {
+    "name": "Ivonne Yang",
+    "status": "Data Engineer",
+    "email": "ivonne.yyc@gmail.com",
+    "phone": "+886-910-207-652",
+    "city": "Taipei City",
+    "lang": "Mandarin",
+    "photo": "https://i.imgur.com/jjYL1U2t.jpg",
+    "content": {
+      "slug": "description",
+      "title": "description",
+      "metadata": {
+        "description": "Hope to know you after",
+        "pres_first": "I'm a Data Engineer.",
+        "pres_second": "I always liked to get into projects using the skills that I did not have or were even spare pure programming like web design, 3D modeling ect...  This allowed me to learn to be autonomous and to learn on my own, certainly not without difficulties far from it, but I always managed to overcome the obstacles and solve the problems I encountered !",
+        "pres_title": "Who am I ?"
+      }
+    },
+    "links": {
+      "slug": "links",
+      "title": "links",
+      "metadata": {
+        "facebook": "https://www.facebook.com/ivonne.yang",
+        "github": "https://github.com/Ivonne-Y",
+        "instagram": "https://www.instagram.com/_hbollon",
+        "linkedin": "https://www.linkedin.com/in/hugobollon"
+      }
+    }
+  }
+}
